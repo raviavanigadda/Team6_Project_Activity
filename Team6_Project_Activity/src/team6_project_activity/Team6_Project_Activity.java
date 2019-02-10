@@ -16,6 +16,11 @@ public class Team6_Project_Activity {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Order o = new Order("Ordered");
+        Customer c = new Customer("Johnson","6590 Sunnybrooke");
+        o.display();
+        c.display();
+       
     }
     
 }

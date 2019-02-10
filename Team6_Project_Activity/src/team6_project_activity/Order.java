@@ -14,9 +14,9 @@ import java.util.Date;
  * @author 1895212
  */
 public class Order {
-    Date date = parseDate("2019-02-10");
+    Date date = parseDate("10-02-2019");
     String status;
-    Customer c;
+    Customer c = new Customer("Johnson","6590 Sunnybrooke");
     
     public Order(String status)
     {
@@ -66,7 +66,7 @@ public class Order {
         
     public static Date parseDate(String date) {
      try {
-         return new SimpleDateFormat("yyyy-MM-dd").parse(date);
+         return new SimpleDateFormat("dd-MM-yyyy").parse(date);
      } catch (ParseException e) {
          return null;
      }
