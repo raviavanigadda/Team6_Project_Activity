@@ -13,6 +13,13 @@ public class OrderDetail {
     
     int quantity;
     String taxStatus;
+    Item item;
+    Order order;
+    
+    public OrderDetail(){
+        item=new Item();
+        order=new Order(taxStatus);
+    }
     
     public void calcWeight(){
         
