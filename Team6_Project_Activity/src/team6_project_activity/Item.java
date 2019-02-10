@@ -14,6 +14,11 @@ public class Item {
     double shippingWeight;
     String description;
     
+    public Item(double shippingWeight,String description){
+        
+        this.shippingWeight=shippingWeight;
+        this.description=description;
+    }
     public void getPriceForQuantity(){
         
     }
