@@ -17,7 +17,7 @@ public class OrderDetail {
     Order order;
     
     public OrderDetail(){
-        item=new Item();
+       
         order=new Order(taxStatus);
     }
     
